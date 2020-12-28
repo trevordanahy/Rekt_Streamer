@@ -16,7 +16,7 @@ def Dyllbob(reward):
     rekters.Do_Alittle_Dance(rekters.shimmy, 5)
     print("\n press ENTER to close")
   elif reward == "Shoot'em Up":
-    rekters.Shoot_em_Up()
+    rekters.Mouse_Hold(5)
     print("\n  press ENTER to close")
   else :
     print("That reward doesn't exist")
