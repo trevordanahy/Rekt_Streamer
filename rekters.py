@@ -29,12 +29,23 @@ def Do_Alittle_Dance(dance_name: str = "shuffle hop", reps: int = 5) -> None:
         in while redeeming. Defaults to "shuffle hop".
         reps (int, optional): Number of times to dance. Defaults to 5 sec.
     """
+    knows_dance = False
+    dance_key = ""
+
     for key in available_dances.keys():
-        if key in dance_name:
-            for _ in range(reps):
-                dances.dance_list[key]
+        if key not in dance_name:
+            continue
         else:
+            knows_dance = True
+            dance_key = key
+
+    if knows_dance is False:
+        for _ in range(reps):
             dances.Shuffle_Hop()
+    else:
+        dance = dances.dance_list[dance_key]
+        for _ in range(reps):
+            dances.do_dance(dance)
 
 
 def Mouse_Hold(mode: str = "rapid", hold_time: float = 5.0) -> None:

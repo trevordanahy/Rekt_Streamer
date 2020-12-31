@@ -1,10 +1,9 @@
 from pydirectinput import keyDown, keyUp
 from time import sleep
 
-dance_list = {
-    "shuffle hop": "Shuffle_Hop()",
-    "stroll": "Stroll()"
-}
+
+def do_dance(func):
+    func()   
 
 
 def Button_Press(button: str, delay: int) -> None:
@@ -32,3 +31,9 @@ def Stroll() -> None:
     """
     Button_Press('w', 2)
     Button_Press('s', 2)
+
+
+dance_list = {
+    "shuffle hop": Shuffle_Hop,
+    "stroll": Stroll
+}
