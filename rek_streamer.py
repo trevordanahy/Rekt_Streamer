@@ -19,6 +19,7 @@ def Channel_Pt_Controller(uuid: UUID, data: dict) -> None:
     redeemer = data["data"]["redemption"]["user"]["display_name"]
     reward = data["data"]["redemption"]["reward"]["title"]
     command = data["data"]["redemption"]["user_input"]
+    command = command.lower()
     print(redeemer + " Is going to rek you.")
 
     if reward == "Do a little dance":

@@ -56,7 +56,6 @@ def Mouse_Hold(mode: str = "rapid", hold_time: float = 5.0) -> None:
         mode (str, optional): Chooses rapid clicking or click and hold.
         hold_time (float, optional): Time to hold control of mouse. Defaults to 5.0 sec.
     """
-    mode = mode.lower()
     if "rapid" in mode:
         Mouse_Rapid(hold_time)
     elif "hold" in mode:

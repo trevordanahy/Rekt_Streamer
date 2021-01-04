@@ -1,0 +1,161 @@
+{
+  "type": "reward-redeemed",
+  "data": {
+    "timestamp": "2020-12-27T01:07:40.954347792Z",
+    "redemption": {
+      "id": "60b11644-df0a-4168-8f8a-4a7ec833b5cf",
+      "user": {
+        "id": "496696953",
+        "login": "crisprfries",
+        "display_name": "crisprfries"
+      },
+      "channel_id": "50574591",
+      "redeemed_at": "2020-12-27T01:07:40.954347792Z",
+      "reward": {
+        "id": "97274d3e-8ac0-4774-93fe-067e6d862b0a",
+        "channel_id": "50574591",
+        "title": "Choose My Character",
+        "prompt": "You can choose my character in any game!",
+        "cost": 2500,
+        "is_user_input_required": True,
+        "is_sub_only": False,
+        "image": None,
+        "default_image": {
+          "url_1x": "https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
+          "url_2x": "https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
+          "url_4x": "https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
+        },
+        "background_color": "#0013A3",
+        "is_enabled": True,
+        "is_paused": False,
+        "is_in_stock": True,
+        "max_per_stream": { "is_enabled": False, "max_per_stream": 0 },
+        "should_redemptions_skip_request_queue": False,
+        "template_id": None,
+        "updated_for_indicator_at": "2020-04-21T00:12:44.094125822Z",
+        "max_per_user_per_stream": {
+          "is_enabled": False,
+          "max_per_user_per_stream": 0
+        },
+        "global_cooldown": {
+          "is_enabled": False,
+          "global_cooldown_seconds": 0
+        },
+        "redemptions_redeemed_current_stream": None,
+        "cooldown_expires_at": None
+      },
+      "user_input": "play as a bat",
+      "status": "UNFULFILLED"
+    }
+  }
+}
+
+{
+  "type":"reward-redeemed",
+  "data":{
+     "timestamp":"2020-12-27T01:09:38.56674406Z",
+     "redemption":{
+        "id":"1b6e9a00-cf3e-4dc7-ab0c-199397c755f3",
+        "user":{
+           "id":"496696953",
+           "login":"crisprfries",
+           "display_name":"crisprfries"
+        },
+        "channel_id":"50574591",
+        "redeemed_at":"2020-12-27T01:09:38.56674406Z",
+        "reward":{
+           "id":"298a737e-c9a7-4e4b-840d-54a780cf7a8e",
+           "channel_id":"50574591",
+           "title":"Choose my Weapon!",
+           "prompt":"You can choose my weapon in any multiplayer game! (unranked)",
+           "cost":3000,
+           "is_user_input_required":True,
+           "is_sub_only":False,
+           "image":"None",
+           "default_image":{
+              "url_1x":"https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
+              "url_2x":"https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
+              "url_4x":"https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
+           },
+           "background_color":"#56BDE6",
+           "is_enabled":True,
+           "is_paused":False,
+           "is_in_stock":True,
+           "max_per_stream":{
+              "is_enabled":False,
+              "max_per_stream":0
+           },
+           "should_redemptions_skip_request_queue":False,
+           "template_id":"None",
+           "updated_for_indicator_at":"2020-04-21T00:13:39.25485842Z",
+           "max_per_user_per_stream":{
+              "is_enabled":False,
+              "max_per_user_per_stream":0
+           },
+           "global_cooldown":{
+              "is_enabled":False,
+              "global_cooldown_seconds":0
+           },
+           "redemptions_redeemed_current_stream":"None",
+           "cooldown_expires_at":"None"
+        },
+        "user_input":"test2",
+        "status":"UNFULFILLED"
+     }
+  }
+}
+
+{
+  "type":"reward-redeemed",
+  "data":{
+     "timestamp":"2020-12-27T01:11:07.392091315Z",
+     "redemption":{
+        "id":"7cf5e6fc-0855-43d3-98a9-6a061aa238c4",
+        "user":{
+           "id":"496696953",
+           "login":"crisprfries",
+           "display_name":"crisprfries"
+        },
+        "channel_id":"50574591",
+        "redeemed_at":"2020-12-27T01:11:07.392091315Z",
+        "reward":{
+           "id":"d38bb374-4fc7-4a22-bc52-a277a9c22cd9",
+           "channel_id":"50574591",
+           "title":"Take away mod for a day",
+           "prompt":"Take a mod away from any current mod, give them a big frigg you for one day!",
+           "cost":5000,
+           "is_user_input_required":True,
+           "is_sub_only":False,
+           "image":"None",
+           "default_image":{
+              "url_1x":"https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
+              "url_2x":"https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
+              "url_4x":"https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
+           },
+           "background_color":"#FF6905",
+           "is_enabled":True,
+           "is_paused":False,
+           "is_in_stock":True,
+           "max_per_stream":{
+              "is_enabled":False,
+              "max_per_stream":0
+           },
+           "should_redemptions_skip_request_queue":False,
+           "template_id":"None",
+           "updated_for_indicator_at":"2020-04-21T00:15:19.935736073Z",
+           "max_per_user_per_stream":{
+              "is_enabled":False,
+              "max_per_user_per_stream":0
+           },
+           "global_cooldown":{
+              "is_enabled":False,
+              "global_cooldown_seconds":0
+           },
+           "redemptions_redeemed_current_stream":"None",
+           "cooldown_expires_at":"None"
+        },
+        "user_input":"get fukd peeka, test 4",
+        "status":"UNFULFILLED"
+     }
+  }
+}
