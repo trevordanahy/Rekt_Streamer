@@ -32,6 +32,8 @@ def Channel_Pt_Controller(uuid: UUID, data: dict) -> None:
         print("That reward doesn't exist")
         print("\n press ENTER to close")
 
+    rekters.Reset()
+
 
 # Start pubsub
 pubsub = PubSub(twitch)
