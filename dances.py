@@ -19,6 +19,12 @@ def Button_Press(button: str, delay: int) -> None:
 
 
 def Shuffle_Hop() -> None:
+    """Not Essential:
+    For both this function, and Stroll(), I would consider moving
+    the left/right/forward/back keys into a configuration file so 
+    you can account for non-default keybindings.
+    """
+
     """Move the player left to right then jump
     """
     Button_Press('a', 2)

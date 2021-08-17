@@ -35,11 +35,19 @@ def Channel_Pt_Controller(uuid: UUID, data: dict) -> None:
     rekters.Reset()
 
 
-# Start pubsub
-pubsub = PubSub(twitch)
-pubsub.start()
-# We save the uuid provided to unlisten later
-uuid = pubsub.listen_channel_points(user_id, Channel_Pt_Controller)
-input("press ENTER to close")
-pubsub.unlisten(uuid)
-pubsub.stop()
+"""Not Essential:
+It's good practice to wrap functions that run on init in a "main" conditional
+
+This prevents the functions from being called accidentally if this file were 
+ever to be imported into another script.
+"""
+
+if __name__ == "__main__":
+    # Start pubsub
+    pubsub = PubSub(twitch)
+    pubsub.start()
+    # We save the uuid provided to unlisten later
+    uuid = pubsub.listen_channel_points(user_id, Channel_Pt_Controller)
+    input("press ENTER to close")
+    pubsub.unlisten(uuid)
+    pubsub.stop()

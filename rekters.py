@@ -30,22 +30,24 @@ def Do_Alittle_Dance(dance_name: str = "shuffle hop", reps: int = 5) -> None:
         reps (int, optional): Number of times to dance. Defaults to 5 sec.
     """
     knows_dance = False
-    dance_key = ""
 
-    for key in available_dances.keys():
-        if key not in dance_name:
-            continue
-        else:
-            knows_dance = True
-            dance_key = key
+    
+    """ 
+    Use dict.get() with a default value to simplify some of the logic
 
-    if knows_dance is False:
-        for _ in range(reps):
-            dances.Shuffle_Hop()
-    else:
-        dance = dances.dance_list[dance_key]
-        for _ in range(reps):
-            dances.do_dance(dance)
+        avaliable_dances.get(dance_name, VALUE) 
+
+    will return VALUE if dance_name is not a valid key,
+
+    which means that:
+
+        available_dances.get(dance_name, available_dances.get("shuffle hop"))
+
+    will return available_dances.get("shuffle hop") if dance_name is not a valid key
+    """
+    dance_func = available_dances.get(dance_name, available_dances.get("shuffle hop"))
+    for _ in range(reps):
+        dances.do_dance(dance_func)
 
 
 def Mouse_Hold(mode: str = "rapid", hold_time: float = 5.0) -> None:
